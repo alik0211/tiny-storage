@@ -1,6 +1,6 @@
 # tiny-storage
 
-A small wrapper over the localStorage
+Tiny wrapper around localStorage and sessionStorage
 
 ## Installation
 ### From npm
@@ -9,7 +9,6 @@ npm install tiny-storage
 ```
 
 ### From CDN
-<!-- https://www.jsdelivr.com/ -->
 ```html
 <script src="https://cdn.jsdelivr.net/npm/tiny-storage@1.0.0/dist/tiny-storage.min.js"></script>
 <script>

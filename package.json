@@ -1,13 +1,25 @@
 {
   "name": "tiny-storage",
   "version": "0.0.1",
-  "description": "A small wrapper over the localStorage",
+  "description": "Tiny wrapper around localStorage and sessionStorage",
+  "keywords": [
+    "localStorage",
+    "sessionStorage",
+    "storage",
+    "wrapper",
+    "tiny"
+  ],
+  "homepage": "https://github.com/alik0211/tiny-storage#readme",
+  "bugs": {
+    "url": "https://github.com/alik0211/tiny-storage",
+    "email": "alik0211alik@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/alik0211/tiny-storage.git"
   },
   "license": "MIT",
-  "author": "alik0211",
+  "author": "Ali Gasymov <alik0211alik@gmail.com> (https://alik0211.com/)",
   "main": "dist/tiny-storage.cjs.js",
   "scripts": {
     "build": "rollup -c"
