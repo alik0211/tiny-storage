@@ -5,17 +5,17 @@ class TinyStorage {
   setStorage(storage) {
     this.storage = storage;
   }
-  key(key) {
-    return this.storage.key(key);
+  key(index) {
+    return this.storage.key(index);
   }
-  get(name) {
-    return JSON.parse(this.storage.getItem(name));
+  get(keyName) {
+    return JSON.parse(this.storage.getItem(keyName));
   }
-  set(name, value) {
-    return this.storage.setItem(name, JSON.stringify(value));
+  set(keyName, keyValue) {
+    return this.storage.setItem(keyName, JSON.stringify(keyValue));
   }
-  remove(name) {
-    return this.storage.removeItem(name);
+  remove(keyName) {
+    return this.storage.removeItem(keyName);
   }
   clear() {
     return this.storage.clear();
