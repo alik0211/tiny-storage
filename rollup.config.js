@@ -4,7 +4,7 @@ import pkg from './package.json';
 
 export default [
   {
-    input: 'main.js',
+    input: 'src/main.js',
     output: {
       file: pkg.browser,
       format: 'umd',
@@ -18,7 +18,7 @@ export default [
     ]
   },
   {
-    input: 'main.js',
+    input: 'src/main.js',
     output: {
       file: pkg.main,
       format: 'cjs'
