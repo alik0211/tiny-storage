@@ -1,5 +1,7 @@
 # tiny-storage
 
+[![Travis](https://img.shields.io/travis/alik0211/tiny-storage.svg?style=flat-square)](https://travis-ci.org/alik0211/tiny-storage)
+
 Tiny wrapper around localStorage and sessionStorage
 
 ## Installation
