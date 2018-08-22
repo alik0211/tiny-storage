@@ -2,6 +2,13 @@
   "name": "tiny-storage",
   "version": "1.0.0",
   "description": "Tiny wrapper around localStorage and sessionStorage",
+  "scripts": {
+    "build": "cross-env NODE_ENV=build rollup -c",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "main": "dist/tiny-storage.cjs.js",
+  "module": "dist/tiny-storage.es.js",
+  "browser": "dist/tiny-storage.min.js",
   "keywords": [
     "localStorage",
     "sessionStorage",
@@ -20,12 +27,6 @@
   },
   "license": "MIT",
   "author": "Ali Gasymov <alik0211alik@gmail.com> (https://alik0211.com/)",
-  "main": "dist/tiny-storage.cjs.js",
-  "scripts": {
-    "build": "cross-env NODE_ENV=build rollup -c",
-    "test": "cross-env NODE_ENV=test jest"
-  },
-  "browser": "dist/tiny-storage.min.js",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
