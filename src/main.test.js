@@ -1,47 +1,72 @@
-import tinyStorage from '../src/main';
+import { tinyLocalStorage, tinySessionStorage } from '../src/main';
 
 const user = {
   name: 'Ali',
   surname: 'Gasymov'
 };
 
-describe('set()', () => {
+describe('tinyLocalStorage', () => {
   test('set() set value in storage', () => {
-    tinyStorage.set('user', user);
-    expect(tinyStorage.get('user')).toEqual(user);
+    tinyLocalStorage.set('user', user);
+    expect(tinyLocalStorage.get('user')).toEqual(user);
   });
-});
 
-describe('get()', () => {
   test('get() returns null if the key is missing', () => {
-    expect(tinyStorage.get('nonExistentKey')).toBeNull();
+    expect(tinyLocalStorage.get('nonExistentKey')).toBeNull();
   });
 
   test('get() returns the parsed object', () => {
-    expect(tinyStorage.get('user')).toEqual(user);
+    expect(tinyLocalStorage.get('user')).toEqual(user);
   });
-});
 
-describe('key()', () => {
   test('key() returns null if the key is missing', () => {
-    expect(tinyStorage.key(999)).toBeNull();
+    expect(tinyLocalStorage.key(999)).toBeNull();
   });
 
   test('key() returns the key', () => {
-    expect(tinyStorage.key(0)).toBe('user');
+    expect(tinyLocalStorage.key(0)).toBe('user');
   });
-});
 
-describe('remove()', () => {
   test('remove() removes a value from the store', () => {
-    tinyStorage.remove('testSet');
-    expect(tinyStorage.get('testSet')).toBeNull();
+    tinyLocalStorage.remove('testSet');
+    expect(tinyLocalStorage.get('testSet')).toBeNull();
+  });
+
+  test('clear() clears storage', () => {
+    tinyLocalStorage.clear();
+    expect(tinyLocalStorage.length).toBe(0);
   });
 });
 
-describe('clear()', () => {
+describe('tinySessionStorage', () => {
+  test('set() set value in storage', () => {
+    tinySessionStorage.set('user', user);
+    expect(tinySessionStorage.get('user')).toEqual(user);
+  });
+
+  test('get() returns null if the key is missing', () => {
+    expect(tinySessionStorage.get('nonExistentKey')).toBeNull();
+  });
+
+  test('get() returns the parsed object', () => {
+    expect(tinySessionStorage.get('user')).toEqual(user);
+  });
+
+  test('key() returns null if the key is missing', () => {
+    expect(tinySessionStorage.key(999)).toBeNull();
+  });
+
+  test('key() returns the key', () => {
+    expect(tinySessionStorage.key(0)).toBe('user');
+  });
+
+  test('remove() removes a value from the store', () => {
+    tinySessionStorage.remove('testSet');
+    expect(tinySessionStorage.get('testSet')).toBeNull();
+  });
+
   test('clear() clears storage', () => {
-    tinyStorage.clear();
-    expect(tinyStorage.length).toBe(0);
+    tinySessionStorage.clear();
+    expect(tinySessionStorage.length).toBe(0);
   });
 });

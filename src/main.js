@@ -2,9 +2,6 @@ class TinyStorage {
   constructor(storage) {
     this.storage = storage;
   }
-  setStorage(storage) {
-    this.storage = storage;
-  }
   key(index) {
     return this.storage.key(index);
   }
@@ -25,6 +22,7 @@ class TinyStorage {
   }
 }
 
-const tinyStorage = new TinyStorage(localStorage);
+const tinyLocalStorage = new TinyStorage(localStorage);
+const tinySessionStorage = new TinyStorage(sessionStorage);
 
-export default tinyStorage;
+export { tinyLocalStorage, tinySessionStorage };
