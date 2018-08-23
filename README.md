@@ -5,15 +5,35 @@
 
 Tiny wrapper around localStorage and sessionStorage
 
-## Installation
-### From npm
+## Description
+The `tinyLocalStorage` is the wrapper over the `localStorage`.<br>
+The `tinySessionStorage` is the wrapper over the `sessionStorage`.
+
+## Quick start
+### Module
+#### Installation
 ```
 npm install tiny-storage
 ```
+#### Usage
+```javascript
+import { tinyLocalStorage } from 'tiny-storage';
+// Or as CommonJS
+// const { tinyLocalStorage } = require('tiny-storage');
 
-### From CDN
+tinyLocalStorage.set('user', {
+  name: 'Ali',
+  surname: 'Gasymov'
+});
+```
+
+### Browser
+#### Installation
 ```html
 <script src="https://cdn.jsdelivr.net/npm/tiny-storage@1.0.0/dist/tiny-storage.min.js"></script>
+```
+#### Usage
+```html
 <script>
   tinyLocalStorage.set('user', {
     name: 'Ali',
