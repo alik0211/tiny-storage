@@ -1,28 +1,27 @@
-class TinyStorage {
-  constructor(storage) {
-    this.storage = storage;
-  }
-  key(index) {
-    return this.storage.key(index);
-  }
-  get(keyName) {
-    return JSON.parse(this.storage.getItem(keyName));
-  }
-  set(keyName, keyValue) {
-    return this.storage.setItem(keyName, JSON.stringify(keyValue));
-  }
-  remove(keyName) {
-    return this.storage.removeItem(keyName);
-  }
-  clear() {
-    return this.storage.clear();
-  }
-  get length() {
-    return this.storage.length;
+function createTinyStorage(storage) {
+  return {
+    key(index) {
+      return storage.key(index);
+    },
+    get(keyName) {
+      return JSON.parse(storage.getItem(keyName));
+    },
+    set(keyName, keyValue) {
+      return storage.setItem(keyName, JSON.stringify(keyValue));
+    },
+    remove(keyName) {
+      return storage.removeItem(keyName);
+    },
+    clear() {
+      return storage.clear();
+    },
+    get length() {
+      return storage.length;
+    }
   }
 }
 
-const tinyLocalStorage = new TinyStorage(localStorage);
-const tinySessionStorage = new TinyStorage(sessionStorage);
+const tinyLocalStorage = createTinyStorage(localStorage);
+const tinySessionStorage = createTinyStorage(sessionStorage);
 
 export { tinyLocalStorage, tinySessionStorage };
