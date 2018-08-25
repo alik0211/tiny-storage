@@ -7,8 +7,9 @@ export default [
     input: 'src/main.js',
     output: {
       file: pkg.browser,
-      format: 'umd',
-      name: 'tinyStorage'
+      format: 'iife',
+      name: 'window',
+      extend: true
     },
     plugins: [
       babel({
