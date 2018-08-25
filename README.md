@@ -6,7 +6,8 @@
 Tiny wrapper around localStorage and sessionStorage
 
 ## Description
-The `tinyLocalStorage` is the wrapper over the `localStorage`.<br>
+The `tinyLocalStorage` is the wrapper over the `localStorage`.
+
 The `tinySessionStorage` is the wrapper over the `sessionStorage`.
 
 ## Quick start
@@ -17,9 +18,9 @@ npm install tiny-storage
 ```
 #### Usage
 ```javascript
-import { tinyLocalStorage } from 'tiny-storage';
+import { tinyLocalStorage, tinySessionStorage } from 'tiny-storage';
 // Or as CommonJS
-// const { tinyLocalStorage } = require('tiny-storage');
+// const { tinyLocalStorage, tinySessionStorage } = require('tiny-storage');
 
 tinyLocalStorage.set('user', {
   name: 'Ali',
