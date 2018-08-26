@@ -36,7 +36,7 @@ tinySessionStorage.set('user', {
 ### Browser
 #### Installation
 ```html
-<script src="https://cdn.jsdelivr.net/npm/tiny-storage@1.0.0/dist/tiny-storage.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tiny-storage@2.0.0/dist/tiny-storage.min.js"></script>
 ```
 #### Usage
 ```html
