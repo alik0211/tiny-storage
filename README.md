@@ -3,7 +3,7 @@
 [![NPM](https://img.shields.io/npm/v/tiny-storage.svg?style=flat-square)](https://www.npmjs.com/package/tiny-storage)
 [![Travis](https://img.shields.io/travis/alik0211/tiny-storage/master.svg?style=flat-square)](https://travis-ci.org/alik0211/tiny-storage)
 
-Tiny wrapper around localStorage and sessionStorage
+Tiny wrapper around localStorage and sessionStorage with reliable data storage.
 
 ## Description
 The `tinyLocalStorage` is the wrapper over the `localStorage`.

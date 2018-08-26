@@ -1,7 +1,7 @@
 {
   "name": "tiny-storage",
   "version": "1.0.0",
-  "description": "Tiny wrapper around localStorage and sessionStorage",
+  "description": "Tiny wrapper around localStorage and sessionStorage with reliable data storage.",
   "scripts": {
     "build": "cross-env NODE_ENV=build rollup -c",
     "test": "cross-env NODE_ENV=test jest"
