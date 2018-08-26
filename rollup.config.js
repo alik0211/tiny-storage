@@ -7,7 +7,7 @@ export default [
     input: 'src/main.js',
     output: {
       file: pkg.browser,
-      format: 'iife',
+      format: 'umd',
       name: 'window',
       extend: true
     },
