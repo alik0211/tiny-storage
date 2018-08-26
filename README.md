@@ -26,6 +26,11 @@ tinyLocalStorage.set('user', {
   name: 'Ali',
   surname: 'Gasymov'
 });
+
+tinySessionStorage.set('user', {
+  name: 'Ali',
+  surname: 'Gasymov'
+});
 ```
 
 ### Browser
@@ -40,6 +45,11 @@ tinyLocalStorage.set('user', {
     name: 'Ali',
     surname: 'Gasymov'
   });
+
+  tinySessionStorage.set('user', {
+    name: 'Ali',
+    surname: 'Gasymov'
+  });
 </script>
 ```
 
@@ -49,12 +59,16 @@ When passed a number n, returns the name of the nth key in the storage. The orde
 
 ```javascript
 tinyLocalStorage.key(0);
+
+tinySessionStorage.key(0);
 ```
 ### `get(keyName)`
 When passed a key name, will return that key's value or null if the key does not exist.
 
 ```javascript
 tinyLocalStorage.get('user');
+
+tinySessionStorage.get('user');
 ```
 ### `set(keyName, keyValue)`
 When passed a key name and value, will add that key to the storage, or update that key's value if it already exists.
@@ -64,18 +78,27 @@ tinyLocalStorage.set('user', {
   name: 'Ali',
   surname: 'Gasymov'
 });
+
+tinySessionStorage.set('user', {
+  name: 'Ali',
+  surname: 'Gasymov'
+});
 ```
 ### `remove(keyName)`
 When passed a key name, will remove that key from the storage if it exists. If there is no item associated with the given key, this method will do nothing.
 
 ```javascript
 tinyLocalStorage.remove('user');
+
+tinySessionStorage.remove('user');
 ```
 ### `clear()`
 When invoked, clears all stored keys.
 
 ```javascript
 tinyLocalStorage.clear();
+
+tinySessionStorage.clear();
 ```
 
 ## Properties
