@@ -2,6 +2,7 @@
 
 [![NPM](https://img.shields.io/npm/v/tiny-storage.svg?style=flat-square)](https://www.npmjs.com/package/tiny-storage)
 [![Travis](https://img.shields.io/travis/alik0211/tiny-storage/master.svg?style=flat-square)](https://travis-ci.org/alik0211/tiny-storage)
+[![Coverage Status](https://img.shields.io/coveralls/github/alik0211/tiny-storage/master.svg?style=flat-square)](https://coveralls.io/github/alik0211/tiny-storage?branch=master)
 
 Tiny wrapper around localStorage and sessionStorage with reliable data storage.
 
